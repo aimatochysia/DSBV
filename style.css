@@ -1,7 +1,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-color: #ecf0f1; /* Set a default background color */
+  background-color: #ecf0f1;
   transition: background-color 0.3s ease;
   color: rgb(0, 0, 0);
 }

@@ -13,11 +13,7 @@ darkModeBtn.addEventListener('click', toggleDarkMode)
 function updateBorder () {
   const borderThickness = parseInt(slider.value)
   borderValue.textContent = `Border Thickness: ${borderThickness}px`
-
-  // Update border styles
   border.style.borderWidth = `${borderThickness}px`
-
-  // Update resolution display
   updateResolutionDisplay()
 }
 
@@ -35,8 +31,6 @@ function updateResolutionDisplay () {
   resolutionDisplay.textContent = `Screen Resolution: ${screenWidth} x ${screenHeight}`
 }
 
-// Initial update
 updateResolutionDisplay()
 
-//update every 250ms
 setInterval(updateResolutionDisplay, 250)
